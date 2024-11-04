@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+  <h1>Page d'accueil</h1>
+    <h2>Formulaire</h2>
+    <form method="post" action="{{ url_for('main.submit') }}">
+        <label for="name">Nom:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <input type="submit" value="Soumettre">
+    </form>
+</body>
+</html>
